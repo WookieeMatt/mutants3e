@@ -1,0 +1,22 @@
+{
+  "MUTANTS3E.AbilityStr": "Strength",
+  "MUTANTS3E.AbilityCon": "Constitution",
+  "MUTANTS3E.AbilityDex": "Dexterity",
+  "MUTANTS3E.AbilityInt": "Intelligence",
+  "MUTANTS3E.AbilityWis": "Wisdom",
+  "MUTANTS3E.AbilityCha": "Charisma",
+
+  "MUTANTS3E.AbilityStrAbbr": "str",
+  "MUTANTS3E.AbilityConAbbr": "con",
+  "MUTANTS3E.AbilityDexAbbr": "dex",
+  "MUTANTS3E.AbilityIntAbbr": "int",
+  "MUTANTS3E.AbilityWisAbbr": "wis",
+  "MUTANTS3E.AbilityChaAbbr": "cha",
+
+  "MUTANTS3E.EffectCreate": "Create Effect",
+  "MUTANTS3E.EffectToggle": "Toggle Effect",
+  "MUTANTS3E.EffectEdit": "Edit Effect",
+  "MUTANTS3E.EffectDelete": "Delete Effect",
+
+  "MUTANTS3E.Add": "Add"
+}
