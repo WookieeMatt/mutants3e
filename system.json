@@ -2,7 +2,7 @@
   "name": "mutants3e",
   "title": "Mutants3E",
   "description": "The Mutants & Mastermind 3E system for FoundryVTT!",
-  "version": "1.1.0",
+  "version": "0.0.5",
   "minimumCoreVersion": "0.8.3",
   "compatibleCoreVersion": "0.8.8",
   "author": "WookieeChan (Matt Rimler)",
