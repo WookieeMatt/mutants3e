@@ -7,7 +7,7 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/mutants3e/templates/actor/parts/actor-features.hbs",
+    "systems/mutants3e/templates/actor/parts/actor-stats.hbs",
     "systems/mutants3e/templates/actor/parts/actor-items.hbs",
     "systems/mutants3e/templates/actor/parts/actor-spells.hbs",
     "systems/mutants3e/templates/actor/parts/actor-effects.hbs",

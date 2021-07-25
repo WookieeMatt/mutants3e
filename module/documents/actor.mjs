@@ -43,17 +43,31 @@ export class Mutants3EActor extends Actor {
    * Prepare Character type specific data
    */
   _prepareCharacterData(actorData) {
-    if (actorData.type !== 'character') return;
+    if (actorData.type !== 'hero') return;
 
     // Make modifications to data here. For example:
     const data = actorData.data;
 
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(data.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
-    }
+   // Loop through ability scores, and add their modifiers to our sheet output.
+   for (let [key, ability] of Object.entries(data.abilities)) {
+    // Calculate the modifier using rules.
+    ability.total = Math.floor(ability.value + ability.mod);
   }
+
+  // Loop through skills and add their modifiers to our sheet output.
+  for (let [key, skills] of Object.entries(data.skills)) {
+    // Calculate the modifier using rules.
+    skills.ability = skills.ability
+    skills.total = Math.floor(skills.value + skills.mod);
+  }
+
+  // Loop through defenses and add their modifiers to our sheet output.
+  for (let [key, defenses] of Object.entries(data.defenses)) {
+    // Calculate the modifier using rules.
+    defenses.ability = defenses.ability
+    defenses.total = Math.floor(defenses.value + defenses.mod);
+  }
+}
 
   /**
    * Prepare NPC type specific data.

@@ -12,6 +12,18 @@ Global styles
   cursor: pointer;
 }
 
+.rollable2:hover, .rollable2:focus {
+  color: #000000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+.rollable3:hover, .rollable3:focus {
+  color: #000000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
 .grid,
 .grid-2col {
   display: grid;
@@ -628,7 +640,7 @@ input::placeholder {
 }
 
 .mutants3e .header-row {
-  display: flex;
+  display: contents;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;

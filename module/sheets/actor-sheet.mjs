@@ -56,6 +56,10 @@ export class Mutants3EActorSheet extends ActorSheet {
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
 
+    let groupName = "identityChoice";
+    let choices = {a: "Secret", b: "Public"};
+    context.choices = choices
+
     return context;
   }
 
@@ -155,6 +159,8 @@ export class Mutants3EActorSheet extends ActorSheet {
 
     // Rollable abilities.
     html.find('.rollable').click(this._onRoll.bind(this));
+    html.find('.rollable2').click(this._onAbilityRoll.bind(this));
+    html.find('.rollable3').click(this._onDefenseRoll.bind(this));
 
     // Drag events for macros.
     if (this.actor.owner) {
@@ -199,30 +205,54 @@ export class Mutants3EActorSheet extends ActorSheet {
    * @param {Event} event   The originating click event
    * @private
    */
-  _onRoll(event) {
+   _onRoll(event) {
     event.preventDefault();
     const element = event.currentTarget;
     const dataset = element.dataset;
-
-    // Handle item rolls.
-    if (dataset.rollType) {
-      if (dataset.rollType == 'item') {
-        const itemId = element.closest('.item').dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        if (item) return item.roll();
-      }
-    }
-
-    // Handle rolls that supply the formula directly.
+    
     if (dataset.roll) {
-      let label = dataset.label ? `[ability] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData()).roll();
-      roll.toMessage({
+      let skill = this.actor.data.data.skills[dataset.roll]
+      let ability = this.actor.data.data.abilities[skill.ability]
+      
+      let roll = new Roll(`1d20 + ${skill.value} +${ability.total} + ${skill.mod}`)
+      let label = dataset.label ? `Rolling ${dataset.label}` : '';
+      roll.roll().toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
+        flavor: label
       });
-      return roll;
+    }
+  }
+
+  _onAbilityRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    
+    if (dataset.roll) {
+      let roll = new Roll(dataset.roll, this.actor.data.data);
+      let label = dataset.label ? `Rolling ${dataset.label}` : '';
+      roll.roll().toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: label
+      });
+    }
+  }
+
+  _onDefenseRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    
+    if (dataset.roll) {
+      let defenses = this.actor.data.data.defenses[dataset.roll]
+      let ability = this.actor.data.data.abilities[defenses.ability]
+      
+      let roll = new Roll(`1d20 + ${defenses.value} +${ability.total} + ${defenses.mod}`)
+      let label = dataset.label ? `Rolling ${dataset.label}` : '';
+      roll.roll().toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: label
+      });
     }
   }
 
