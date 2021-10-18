@@ -52,71 +52,85 @@
         },
         "skills": {
           "acrobatics": {
+            "name": "Acrobatics",
             "value": 0,
             "mod": 0,
             "ability": "agl"
           },
           "athletics": {
+            "name": "Athletics",
             "value": 0,
             "mod": 0,
             "ability": "str"
           },
           "closecombat": {
+            "name": "Close-Combat",
             "value": 0,
             "mod": 0,
             "ability": "fgt"
           },
           "deception": {
+            "name": "Deception",
             "value": 0,
             "mod": 0,
             "ability": "pre"
           },
           "expertise": {
+            "name": "Expertise",
             "value": 0,
             "mod": 0,
             "ability": "int"
           },
           "insight": {
+            "name": "Insight",
             "value": 0,
             "mod": 0,
             "ability": "awe"
           },
           "intimidation": {
+            "name": "Intimidation",
             "value": 0,
             "mod": 0,
             "ability": "pre"
           },
           "investigation": {
+            "name": "Investigation",
             "value": 0,
             "mod": 0,
             "ability": "int"
           },
           "rangedcombat": {
+            "name": "Ranged-Combat",
             "value": 0,
             "mod": 0,
             "ability": "dex"
           },
-          "sleightofhand": {
+          "slightofhand": {
+            "name": "Slight of Hand",
             "value": 0,
             "mod": 0,
             "ability": "dex"
           },
           "stealth": {
+            "name": "Stealth",
             "value": 0,
             "mod": 0,
             "ability": "agl"
           },
           "technology": {
+            "name": "Technology",
             "value": 0,
             "mod": 0,
             "ability": "int"
           },
           "treatment": {
+            "name": "Treatment",
             "value": 0,
             "mod": 0,
             "ability": "int"
           },
           "vehicles": {
+            "name": "Vehicles",
             "value": 0,
             "mod": 0,
             "ability": "dex"

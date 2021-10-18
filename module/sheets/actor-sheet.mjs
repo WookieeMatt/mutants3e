@@ -75,6 +75,12 @@ export class Mutants3EActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.data.abilities)) {
       v.label = game.i18n.localize(CONFIG.MUTANTS3E.abilities[k]) ?? k;
     }
+
+    /* Skill Labels */
+  for (let [key, skills] of Object.entries(context.data.skills)){
+    skills.label = game.i18n.localize(MUTANTS3E.skills_ability[key]);
+    skills.name = game.i18n.localize(MUTANTS3E.skills_name[key])
+  }
   }
 
   /**
@@ -214,7 +220,7 @@ export class Mutants3EActorSheet extends ActorSheet {
       let skill = this.actor.data.data.skills[dataset.roll]
       let ability = this.actor.data.data.abilities[skill.ability]
       
-      let roll = new Roll(`1d20 + ${skill.value} +${ability.total} + ${skill.mod}`)
+      let roll = new Roll(`1d20 + ${skill.value} + ${ability.total} + ${skill.mod}`)
       let label = dataset.label ? `Rolling ${dataset.label}` : '';
       roll.roll().toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
