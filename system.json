@@ -4,7 +4,7 @@
   "description": "The Mutants & Mastermind 3E system for FoundryVTT!",
   "version": "0.0.5",
   "minimumCoreVersion": "0.8.3",
-  "compatibleCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.9",
   "author": "WookieeChan (Matt Rimler)",
   "esmodules": ["module/mutants3e.mjs"],
   "styles": ["css/mutants3e.css"],

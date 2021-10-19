@@ -217,10 +217,10 @@ export class Mutants3EActorSheet extends ActorSheet {
     const dataset = element.dataset;
     
     if (dataset.roll) {
-      let skill = this.actor.data.data.skills[dataset.roll]
-      let ability = this.actor.data.data.abilities[skill.ability]
-      
-      let roll = new Roll(`1d20 + ${skill.value} + ${ability.total} + ${skill.mod}`)
+      let skill = this.actor.data.data.skills[dataset.roll];
+      let ability = this.actor.data.data.abilities[skill.ability];
+
+      let roll = new Roll(`1d20 + ${skill.value} + ${ability.total} + ${skill.mod}`);
       let label = dataset.label ? `Rolling ${dataset.label}` : '';
       roll.roll().toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),

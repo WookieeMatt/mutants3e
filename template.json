@@ -55,85 +55,85 @@
             "name": "Acrobatics",
             "value": 0,
             "mod": 0,
-            "ability": "agl"
+            "ability": "AGL"
           },
           "athletics": {
             "name": "Athletics",
             "value": 0,
             "mod": 0,
-            "ability": "str"
+            "ability": "STR"
           },
           "closecombat": {
             "name": "Close-Combat",
             "value": 0,
             "mod": 0,
-            "ability": "fgt"
+            "ability": "FGT"
           },
           "deception": {
             "name": "Deception",
             "value": 0,
             "mod": 0,
-            "ability": "pre"
+            "ability": "PRE"
           },
           "expertise": {
             "name": "Expertise",
             "value": 0,
             "mod": 0,
-            "ability": "int"
+            "ability": "INT"
           },
           "insight": {
             "name": "Insight",
             "value": 0,
             "mod": 0,
-            "ability": "awe"
+            "ability": "AWE"
           },
           "intimidation": {
             "name": "Intimidation",
             "value": 0,
             "mod": 0,
-            "ability": "pre"
+            "ability": "PRE"
           },
           "investigation": {
             "name": "Investigation",
             "value": 0,
             "mod": 0,
-            "ability": "int"
+            "ability": "INT"
           },
           "rangedcombat": {
             "name": "Ranged-Combat",
             "value": 0,
             "mod": 0,
-            "ability": "dex"
+            "ability": "DEX"
           },
           "slightofhand": {
             "name": "Slight of Hand",
             "value": 0,
             "mod": 0,
-            "ability": "dex"
+            "ability": "DEX"
           },
           "stealth": {
             "name": "Stealth",
             "value": 0,
             "mod": 0,
-            "ability": "agl"
+            "ability": "AGL"
           },
           "technology": {
             "name": "Technology",
             "value": 0,
             "mod": 0,
-            "ability": "int"
+            "ability": "INT"
           },
           "treatment": {
             "name": "Treatment",
             "value": 0,
             "mod": 0,
-            "ability": "int"
+            "ability": "INT"
           },
           "vehicles": {
             "name": "Vehicles",
             "value": 0,
             "mod": 0,
-            "ability": "dex"
+            "ability": "DEX"
           }
         },
         "advantages": {

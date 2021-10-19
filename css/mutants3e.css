@@ -238,12 +238,11 @@ Global styles
 }
 
 /* Styles limited to mutants3e sheets */
-.mutants3e {
+
   /* ----------------------------------------- */
   /*  Items Lists                              */
   /* ----------------------------------------- */
   /* Example style for Mutants3E (can be removed if not needed) */
-}
 
 .mutants .item-form {
   font-family: "Comic Neue", cursive;
@@ -305,10 +304,18 @@ Global styles
   margin: 0;
 }
 
-.mutants3e .sheet-tabs {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
+.sheet-tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input::placeholder {
@@ -316,25 +323,25 @@ input::placeholder {
 }
 
 
-.mutants3e .sheet-body,
-.mutants3e .sheet-body .tab,
-.mutants3e .sheet-body .tab .editor {
+.sheet-body,
+.sheet-body .tab,
+.sheet-body .tab .editor {
   height: 100%;
 }
 
-.mutants3e .tox .tox-editor-container {
+.tox .tox-editor-container {
   background: #fff;
 }
 
-.mutants3e .tox .tox-edit-area {
+.tox .tox-edit-area {
   padding: 0 8px;
 }
 
-.mutants3e .resource-label {
+.resource-label {
   font-weight: bold;
 }
 
-.mutants3e .items-header {
+.items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -346,12 +353,12 @@ input::placeholder {
   font-weight: bold;
 }
 
-.mutants3e .items-header > * {
+.items-header > * {
   font-size: 14px;
   text-align: center;
 }
 
-.mutants3e .items-header .item-name {
+.items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
@@ -360,7 +367,7 @@ input::placeholder {
   display: flex;
 }
 
-.mutants3e .items-list {
+.items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -369,13 +376,13 @@ input::placeholder {
   color: #444;
 }
 
-.mutants3e .items-list .item-list {
+.items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.mutants3e .items-list .item-name {
+.items-list .item-name {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
@@ -391,13 +398,13 @@ input::placeholder {
   display: flex;
 }
 
-.mutants3e .items-list .item-name h3, .mutants3e .items-list .item-name h4 {
+.items-list .item-name h3, .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
 
-.mutants3e .items-list .item-controls {
+.items-list .item-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,13 +416,13 @@ input::placeholder {
   justify-content: flex-end;
 }
 
-.mutants3e .items-list .item-controls a {
+.items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
 
-.mutants3e .items-list .item {
+.items-list .item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -423,15 +430,15 @@ input::placeholder {
   border-bottom: 1px solid #c9c7b8;
 }
 
-.mutants3e .items-list .item:last-child {
+.items-list .item:last-child {
   border-bottom: none;
 }
 
-.mutants3e .items-list .item .item-name {
+.items-list .item .item-name {
   color: #191813;
 }
 
-.mutants3e .items-list .item .item-name .item-image {
+.items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -441,14 +448,14 @@ input::placeholder {
   margin-right: 5px;
 }
 
-.mutants3e .items-list .item-prop {
+.items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
 
-.mutants3e .items-list .items-header {
+.items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -460,33 +467,33 @@ input::placeholder {
   font-weight: bold;
 }
 
-.mutants3e .items-list .items-header > * {
+.items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
 
-.mutants3e .items-list .items-header .item-name {
+.items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
 
-.mutants3e .item-formula {
+.item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
 
-.mutants3e .effects .item .effect-source,
-.mutants3e .effects .item .effect-duration,
-.mutants3e .effects .item .effect-controls {
+.effects .item .effect-source,
+.effects .item .effect-duration,
+.effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
 
-.mutants3e .effects .item .effect-controls {
+.effects .item .effect-controls {
   border: none;
 }
 
@@ -513,21 +520,21 @@ input::placeholder {
   flex: 1;
 }
 
-.mutants3e .character-details .row1 {
+.character-details .row1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0px;
   margin-bottom: -10px;
 }
 
-.mutants3e .character-details .row2 {
+.character-details .row2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 0px;
   margin-bottom: 5px;
 }
 
-.mutants3e .character-details .ppbar {
+.character-details .ppbar {
   display: grid;
   grid-template-columns: repeat(7 ,1fr);
   grid-gap: 0px;
@@ -535,12 +542,12 @@ input::placeholder {
   font-size: 12px;
 }
 
-.mutants3e .combat-grid {
+.combat-grid {
   display: grid;
   grid-template-columns: 320px auto;
 }
 
-.mutants3e .defense-scores {
+.defense-scores {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
@@ -554,7 +561,7 @@ input::placeholder {
 
   /* DEFENSE SCORES */
 
-.mutants3e .defense-scores-item {
+.defense-scores-item {
   /* also flexibly flow items */
   display: flex;
   
@@ -564,7 +571,7 @@ input::placeholder {
   /* center all items horizontally */
   align-items: center;
   
-  /* this is am important line. 
+  /* this is an important line. 
      Equivalent to:
        flex-grow: 1;
        flex-shrinl: 1;
@@ -584,62 +591,80 @@ input::placeholder {
   text-align: center;
 }
 
-.mutants3e .defense-scores-item > input {
+.defense-scores-item > input {
   width: 4em;
   border-radius: 1em;
 }
 
 /* Charlottes meddling */
 
-.mutants3e .ability-scores {
+.ability-scores {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
-.mutants3e .ability-scores, .skills-list {
+.ability-scores, .skills-list {
   margin: 0;
   padding: 0;
 }
 
-.mutants3e .ability-scores li {
+.ability-scores li {
   background-color: lightgrey;
 }
 
-.mutants3e .skills-list {
+.skills-list {
   margin-top: 5px;
 }
 
-.mutants3e  .skills-list li {
+.skills-list li {
   background-color: lightgrey;
   border-radius: 10px;
   border-color:rgb(70, 70, 70);
   margin-bottom: 5px;
 }
 
-.mutants3e .ability {
+.ability {
   border-radius: 10px;
   border-color:rgb(70, 70, 70);
 }
 
-.mutants3e .header-names {
+.header-names {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.mutants3e .header-names input {
+.header-names input {
   height: 40px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  font-weight: bold;
 }
 
-.mutants3e .header-exp {
+.powerlevel input{
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  font-weight: bold;
+}
+
+.pptotal input{
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  font-weight: bold;
+}
+
+.header-exp {
   display: flex;
   flex-direction: column;
   width: 25%;
 }
 
-.mutants3e .header-row {
+.header-row{
   display: contents;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -648,7 +673,14 @@ input::placeholder {
   padding: 0 10px;
 }
 
-.mutants3e .details-row {
+.header-row input {  
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  font-weight: bold;
+}
+
+.details-row{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -657,20 +689,27 @@ input::placeholder {
   padding: 0 5px;
 }
 
-.mutants3e .logo {
+.details-row input {  
+  background-color: lightgrey;
+  border-radius: 10px;
+  border-color:rgb(70, 70, 70);
+  font-weight: bold;
+}
+
+.logo {
   border: none;
 }
 
-.mutants3e .flex-row {
+.flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.mutants3e .flex-column {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.mutants3e .stats {
+.stats {
   padding: 0 0 0 6px;
 }
