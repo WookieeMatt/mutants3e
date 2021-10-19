@@ -169,7 +169,7 @@ export class Mutants3EActorSheet extends ActorSheet {
     html.find('.rollable3').click(this._onDefenseRoll.bind(this));
 
     // Drag events for macros.
-    if (this.actor.owner) {
+    if (this.actor) {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
         if (li.classList.contains("inventory-header")) return;

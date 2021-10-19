@@ -12,42 +12,50 @@
           "str": {
             "value": 0,
             "mod": 0,
-            "label": "Strength"
+            "label": "Strength",
+            "total": 0
           },
           "sta": {
             "value": 0,
             "mod": 0,
-            "label": "Stamina"
+            "label": "Stamina",
+            "total": 0
           },
           "agl": {
             "value": 0,
             "mod": 0,
-            "label": "Agility"
+            "label": "Agility",
+            "total": 0
           },
           "dex": {
             "value": 0,
             "mod": 0,
-            "label": "Dexterity"
+            "label": "Dexterity",
+            "total": 0
           },
           "fgt": {
             "value": 0,
             "mod": 0,
-            "label": "Fighting"
+            "label": "Fighting",
+            "total": 0
           },
           "int": {
             "value": 0,
             "mod": 0,
-            "label": "Intellect"
+            "label": "Intellect",
+            "total": 0
           },
           "awe": {
             "value": 0,
             "mod": 0,
-            "label": "Awareness"
+            "label": "Awareness",
+            "total": 0
           },
           "pre": {
             "value": 0,
             "mod": 0,
-            "label": "Presence"
+            "label": "Presence",
+            "total": 0
           }
         },
         "skills": {
